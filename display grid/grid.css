@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    
+    display: grid;
+    /*display:grid transforma seu elemento em um "quadriculado*/
+    background-color: lightslategrey;
+
+    grid-template-columns: repeat(3, 100px);
+    /*repeat recebe dois parâmetros, sendo o primeiro aquantidade e o segundo o tamanho ou medida*/
+    /*grid-template-columns recebe a quatidade e tamanhos de suas colunas*/
+    grid-template-rows: repeat(5, 100px);
+    /*grid-template-row recebe a quatidade e tamanhos de suas linhas*/
+    grid-template-areas:
+        "amarelo2 amarelo2 amarelo2"
+        "amarelo branco amarelo3"
+        "amarelo4 amarelo4 amarelo4"
+        "preto cinza preto2"
+        "azul azul azul"
+    ;
+}
+
+#amarelo {
+    background-color: yellow;
+    grid-area: amarelo;
+}
+
+#amarelo2 {
+    background-color: yellow;
+    grid-area: amarelo2;
+}
+
+#amarelo3 {
+    background-color: yellow;
+    grid-area: amarelo3;
+}
+
+#amarelo4 {
+    background-color: yellow;
+    grid-area: amarelo4;
+}
+
+#branco {
+    background-color: white;
+    grid-area: branco;
+}
+
+#preto {
+    background-color: black;
+    grid-area: preto;
+}
+
+#preto2 {
+    background-color: black;
+    grid-area: preto2;
+}
+
+
+#azul {
+    background-color: midnightblue;
+    grid-area: azul;
+}
+
+#cinza {
+    background-color: dimgrey;
+    grid-area: cinza;
+}
